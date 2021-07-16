@@ -5,14 +5,12 @@ applications:
         [
             {
                 "name": "env_destination_saphome",
-                 "url": "http://sap.com/"
-            },
-                        {
-                "name": "env_destination_youtubehome",
-                 "url": "http://youtube.com/"
+                "url": "http://sap.com/"
             }
         ]
     host: myapprouterconfapp
     memory: 128M
     name: pedroAppRouterConfigApp
     path: appfolder
+    services:
+      - XsuaaForApprouterWithScope

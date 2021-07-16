@@ -1,16 +1,15 @@
 {
   "welcomeFile": "AppRouterHome.html",
-  "authenticationMethod": "none",
+  "authenticationMethod": "route",
   "routes": [
     {
+      "authenticationType": "xsuaa",
+      "scope": [
+        "$XSAPPNAME.homepageAccessScope"
+      ],
       "source": "^/take-me/to-sap/(.*)$",
       "target": "$1",
       "destination": "env_destination_saphome"
-    },
-    {
-      "source": "^/take-me/to-youtube/(.*)$",
-      "target": "$2",
-      "destination": "env_destination_youtubehome"
     }
   ]
 }

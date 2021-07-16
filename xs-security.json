@@ -1,0 +1,19 @@
+{
+    "xsappname": "XsuaaForApprouterWithScope",
+    "tenant-mode": "dedicated",
+    "scopes": [
+        {
+            "name": "$XSAPPNAME.homepageAccessScope",
+            "description": "Allows access to the homepage"
+        }
+    ],
+    "role-templates": [
+        {
+            "name": "RTHomepageAccess",
+            "description": "Role Template for accessing the homepage",
+            "scope-references": [
+                "$XSAPPNAME.homepageAccessScope"
+            ]
+        }
+    ]
+}
