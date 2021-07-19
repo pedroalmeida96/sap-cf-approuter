@@ -4,8 +4,9 @@ applications:
       destinations: |
         [
             {
-                "name": "env_destination_saphome",
-                "url": "https://apisalesdemo2.successfactors.eu/odata/v2/cust_mdfgcdata"
+              "name": "env_destination_bs",
+              "url": "https://gestaocontratosinetum.cfapps.eu10.hana.ondemand.com/api/sfcall",
+              "forwardAuthToken": true
             }
         ]
     host: myapprouterconfapp
