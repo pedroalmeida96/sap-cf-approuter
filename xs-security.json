@@ -1,19 +1,7 @@
 {
-    "xsappname": "XsuaaForApprouterWithScope",
+    "xsappname": "XsuaaForAppRouterWithBs",
     "tenant-mode": "dedicated",
-    "scopes": [
-        {
-            "name": "$XSAPPNAME.homepageAccessScope",
-            "description": "Allows access to the homepage"
-        }
-    ],
-    "role-templates": [
-        {
-            "name": "RTHomepageAccess",
-            "description": "Role Template for accessing the homepage",
-            "scope-references": [
-                "$XSAPPNAME.homepageAccessScope"
-            ]
-        }
+    "foreign-scope-references": [
+        "$XSAPPNAME(application,4bf2d51c-1973-470e-a2bd-9053b761c69c,Backend-service).AllAccess"
     ]
 }

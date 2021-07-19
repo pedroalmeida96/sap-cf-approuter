@@ -4,8 +4,9 @@ applications:
       destinations: |
         [
             {
-                "name": "env_destination_saphome",
-                "url": "http://sap.com/"
+              "name": "env_destination_bs",
+              "url": "https://apisalesdemo2.successfactors.eu/odata/v2/cust_mdfgcdata",
+              "forwardAuthToken": true
             }
         ]
     host: myapprouterconfapp
@@ -13,4 +14,4 @@ applications:
     name: pedroAppRouterConfigApp
     path: appfolder
     services:
-      - XsuaaForApprouterWithScope
+      - XsuaaForAppRouterWithBs

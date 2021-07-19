@@ -4,12 +4,9 @@
   "routes": [
     {
       "authenticationType": "xsuaa",
-      "scope": [
-        "$XSAPPNAME.homepageAccessScope"
-      ],
-      "source": "^/take-me/to-sap/(.*)$",
+      "source": "^/backendservice/(.*)$",
       "target": "$1",
-      "destination": "env_destination_saphome"
+      "destination": "env_destination_bs"
     }
   ]
 }
